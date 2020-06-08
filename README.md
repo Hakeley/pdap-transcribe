@@ -16,7 +16,7 @@
 - In the method execution tab, click TEST to see if it's properly connected to the lambda function.
 - Enable CORS.
 - Deploy the API
-- The link you want looks like `https://{random chars}.{resource}-api.{location}.amazonaws.com/{deployment name}/{resource}`. Click on your builds and then POST to find it.
+- The link you want looks like `https://{random chars}.{resource}-api.{location}.amazonaws.com/{deployment name}/{resource}`. Click on your stages and then POST to find it.
 Test it using `test1.sh` after inserting your API url into the CURL command.
 - If your requests fail, setup cloudwatch logs for the API in the settings tab to check what's happening under the hood.
 
