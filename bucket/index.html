@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Upload a transcription</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  	<script type="text/javascript" src="script.js"></script>
+
+    <div class="alert alert-danger" role="alert" id="announcement" style="margin: 1% 4% 0% 4%; display: none"></div>
+    <a id='DOWNLOAD' href="{BUCKET SITE NAME}/transcript.txt"></a>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="container">
+                    <div id="identitycard" style="margin-top:50px"
+                        class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <div class="panel-title" style="text-align: center">Upload AWS Transcribe JSON file</div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row" style="padding: 10px 15px 9px;">
+
+                                    <form id="myForm">
+                                        <div class="form-group">
+                                            <div class="row" style="margin-bottom: 20px;">
+                                                <div
+                                                    class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-offset-3 col-sm-offset-3 col-xs-offset-2">
+                                                    <input id="json_file" type="file" name="files[]" autocomplete="off"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="row text-center"
+                                                style="padding-left: 20px;padding-right: 20px;">
+                                                <!-- making this a button instead of submit because we're not
+                                                actually submitting the form -->
+                                                <input id="submit" type="button" value="Submit"
+                                                    class="btn btn-lg btn-block btn-success"
+                                                    style="border-radius: 50px;background-color:hover: #35832f;">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="200.gif" id="loading_img" style="margin: 0 auto; display: none" alt="Downloading">
+
+
+
+
+</body>
+
+</html>
